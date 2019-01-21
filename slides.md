@@ -114,7 +114,7 @@ image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turnt
 
 上述清单是有序的
 
-\* 目前有很多的注意事项
+\* 目前有很多需要注意的地方
 ]
 ]
 
@@ -135,16 +135,16 @@ image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turnt
 .right-column[
 开发 &rarr; 生产
 
-* 多节点
-* 服务发现和 DNS
-* 缩放
-* 多用户
-* 容错和故障恢复
-* 监控
-* 日志
-* 高可用
-* 部署的生命周期管理
-* 负载均衡
+* 多节点部署（Multi-machine）
+* 服务发现和 DNS （Discovery and Naming）
+* 弹缩（Scale in, Scale out）
+* 多用户（Multiple users）
+* 容错和故障恢复（Failure tolerance and recovery）
+* 监控（Monitoring）
+* 日志（Logging）
+* 高可用（High availability）
+* 部署的生命周期管理（Deployment lifecycle）
+* 负载均衡（Load balancing）
 * 等等 ......
 
 ]
@@ -166,7 +166,7 @@ image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turnt
 ]
 .right-column[
 
-* 将你的应用拆分成小型服务，便于重用、混合和共享。
+* 将您的应用拆分成小型服务，便于重用、混合和共享。
 * 支持小型化、灵活和独立的团队和流程。
 * 更好的工具支撑和促进微服务。
 
@@ -242,7 +242,7 @@ https://github.com/kubernetes/kubernetes
 
 *非常非常* 活跃的开源项目
 
-23k stars（赞）, 1400+ 贡献者
+47k+ stars（赞）, 1900+ 贡献者
 
 Apache License 2.0
 
@@ -269,7 +269,7 @@ image-credit: [flickr photo](https://flickr.com/photos/leroy-freakwinter/3108057
 ## Benefits / 收益
 ]
 .right-column[
-跨界点调度部署容器。
+跨节点调度部署容器。
 
 允许专业化的操作。 集群运维 vs. 应用运维。
 
@@ -294,8 +294,8 @@ image-credit: [flickr photo](https://flickr.com/photos/seattlemunicipalarchives/
 * 简单 > 复杂（simple > complex）
 * 模块化（modularity）
 * 传统兼容（legacy compatible）
-* 网络中心（CNI，network-centric）
-* 标签 > 层次（labels > hierarchy）
+* 中心化网络（CNI，network-centric）
+* 标签 > 等级（labels > hierarchy）
 * 无状态 > 有状态（cattle > pets）
 * 开放 > 封闭（open > closed）
 ]]
@@ -440,8 +440,8 @@ image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We'r
   * L7 负载均衡*
 * **Deployments**
   * 声明式的版本升级/回退
-* **Jobs**
-  * 工作至完成的任务
+* **Jobs / Cron Job**
+  * 工作至完成的任务 / 定时任务
 * **Autoscaling**
   * 自动调整副本数目
 * **DaemonSets**
@@ -463,15 +463,16 @@ image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We'r
 .right-column[
 * **Role Based Access Control (RBAC)**
   * 控制用户访问对象的权限
-* **Multiple Schedulers**
+* **Scheduler Extensions**
+  * 用户自定义调度策略
 * **Flexible Scheduling Constraints**
   * 亲和性，反亲和性，污点，容忍
 * **StatefulSet**
   * 支持有状态的分布式应用*
 * **Automatic Cluster Scaling**
-  * 集群弹缩、HPA、VPA等等
+  * 集群弹缩
 * **Cloud Provider Integration**
-  * GCP, AWS, Azure, OpenStack, vSphere
+  * GCP, AWS, Azure, OpenStack, vSphere, VMware, etc.
 * **Network Policy**
   * 网络策略
 ]]
@@ -488,18 +489,22 @@ image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We'r
 # Ecosystem / 生态系统
 ]
 .right-column[
-* **Platforms**
-  * OpenStack, Deis Workflow
+* **Custom Resource Definitions / Custom Controller**
+  * 用户自定义资源及控制器
+* **Extension API Server / Aggregation Layer**
+  * 扩展 API Server / API 聚合层
 * **Operators**
   * 通过 API 自动管理系统/业务APP
   * 通过 K8S 扩展机制实现
   * etcd, Prometheus, elasticsearch, memcahced, mongodb, rook, etc.
-* **Authentication Providers**
-  * 通过 webhook 扩展：OpenID Connect, OAuth 2, LDAP, SAML, etc.
-  * 已经在 GKE、GCE 上实现
+* **Container Storage Interface**
+  * 开放的容器存储接口，方便存储厂商扩展
+* **Container Runtime Interface / Open Container Initiative**
+  * 开放的容器镜像和运行时规范 / 开放的容器运行时接口
 * **Helm: Package Manager**
   * 超级容易安装和使用的包管理系统
-* **Extended Network Policy**
+* **Service Mesh**
+  * 连接，保护，控制和观测微服务
 ]]
 
 .image-credit[
@@ -507,7 +512,7 @@ image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We'r
 ]
 ---
 class: middle, left
-# Thank you!
+# Thank you! / 谢谢！
 
 .cblock[
 Joe Beda<br>
