@@ -21,6 +21,8 @@ release-zip:
 	./make-release-zip.sh
 
 local-webserver:
-	@echo "Launching web server at http://localhost:8000"
+#	@echo "Launching web server at http://localhost:8000"
+	@echo "Launching web server at http://localhost:8028"
 	@echo "Hit Ctrl-C to exit"
-	python -m SimpleHTTPServer 8000
+#	python -m SimpleHTTPServer 8000
+	python -m http.server 8028
