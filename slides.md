@@ -7,7 +7,7 @@ image-credit: Photo "k8s Sticker" shared by Joe Beda under a [Creative Commons (
 ---
 class: middle, center
 
-# Kubernetes 101
+# Kubernetes 101 / Kubernetes 导入培训
 
 .cblock[
 Joe Beda<br>
@@ -25,12 +25,12 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## Containers
+# Recap / 概述
+## Containers / 容器
 ]
 .right-column[
 .center[
-# "It's the next big thing!"
+# “这是下一个大事件！”
 ]
 ]
 ]
@@ -46,25 +46,25 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## Linux Kernel Features
+# Recap / 概述
+## Linux Kernel Features / Linux 内核特性
 
 ]
 .right-column[
-cgroups:
+cgroups：
 
-* Resource limiting, tracking, prioritization, and isolation
-* CPU, RAM, IO, Networking, etc.
-* Developed by Google for over ~10 years
+* 资源限制、跟踪、优先级划分和隔离
+* CPU、RAM、IO、网络等
+* 十多年前由 Google 开发
 * "nice++"
 
-namespaces:
+namespaces：
 
-* Resource visibility and naming isolation
-* network, PID, users, mounts
+* 资源可见性和命名隔离
+* 网络，PID，用户，挂载
 * "chroot++"
 
-cgroups + namespaces = "lightweight virtualization"
+cgroups + namespaces = “轻量级虚拟化”
 ]
 ]
 
@@ -78,16 +78,16 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## User Experience
+# Recap / 概述
+## User Experience / 用户体验
 
 ]
 .right-column[
-Containers == Docker?
+Containers == Docker？
 
-* *Image format:* Upload, download, share, build
-* *API:* Automatable create, delete, start, stop
-* *Networking*: Good defaults
+* *镜像格式：* 上传，下载，共享，构建
+* *API/应用程序接口：* 自动化创建、删除、启动、停止
+* *网络：* 良好的默认配置
 ]
 ]
 
@@ -101,20 +101,20 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## Excitement
+# Recap / 概述
+## Excitement / 激动人心的特性
 
 ]
 .right-column[
-Users benefits:
+用户收益：
 
-1. Packaging, deployment and reuse
-2. Efficiency and overcommit
-3. Security*
+1. 打包，部署和重复使用
+2. 效率和大量使用
+3. 安全*
 
-This list is in order
+上述清单是有序的
 
-\* Big caveats here currently
+\* 目前有很多的注意事项
 ]
 ]
 
@@ -128,24 +128,24 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## Gaps
+# Recap / 概述
+## Gaps / 鸿沟
 
 ]
 .right-column[
-Dev &rarr; Production
+开发 &rarr; 生产
 
-* Multi-machine
-* Discovery and Naming
-* Scaling
-* Multiple users
-* Failure tolerance and recovery
-* Monitoring
-* Logging
-* High availability
-* Deployment lifecycle
-* Load balancing
-* etc, etc
+* 多节点
+* 服务发现和 DNS
+* 缩放
+* 多用户
+* 容错和故障恢复
+* 监控
+* 日志
+* 高可用
+* 部署的生命周期管理
+* 负载均衡
+* 等等 ......
 
 ]
 ]
@@ -160,17 +160,17 @@ background-image: url(photos/record.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mavadam/3241311268 "Turntable") shared by [VanDammeMaarten](https://flickr.com/people/mavadam) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Recap
-## Micro-services?
+# Recap / 概述
+## Micro-services? / 微服务？
 
 ]
 .right-column[
 
- * Split your application into small services that can be reused, remixed and shared.
- * Enables smaller, nimble, decoupled teams and processes.
- * Better tooling enables and encourages microservices.
+* 将你的应用拆分成小型服务，便于重用、混合和共享。
+* 支持小型化、灵活和独立的团队和流程。
+* 更好的工具支撑和促进微服务。
 
-Not what I'm talking about today.
+但这不是今天的重点。
 
 ]
 ]
@@ -185,23 +185,21 @@ image-credit: [flickr photo](https://flickr.com/photos/leroy-freakwinter/3108057
 
 .column-container[.left-column[
 # Kubernetes
-## Defined
+## Defined / 定义
 
 ]
 .right-column[
 
 
-Kubernetes is ancient Greek for "Helmsman".  Root of the word "Governor", "Cybernetics".
-
-Kubernetes is a "Container Orchestrator" or "Cluster Manager".
-
-* Places containers on nodes
-* Recovers automatically from failure
-* Basic monitoring, logging, health checking
-* Enables containers to find each other.
+Kubernetes 是 “Helmsman” 的古希腊语（舵手）。 “管理者”，“控制论” 一词的根源。
+Kubernetes 是一个 “容器编排系统” 或者 “集群管理系统”。
+* 在节点上部署容器
+* 故障自动恢复
+* 基本的监控、日志和健康检查
+* 允许容器相互查找（服务注册发现）
 
 
-Key component in *logical infrastructure*
+关键组件参考后面的“逻辑架构”
 
 ]]
 
@@ -215,16 +213,16 @@ image-credit: [flickr photo](https://flickr.com/photos/leroy-freakwinter/3108057
 
 .column-container[.left-column[
 # Kubernetes
-## Google Grown
+## Google Grown / Google 经历
 ]
 .right-column[
-Based on ideas proven at Google over 10 years
+基于 Google 10多年来已证明的观点。
 
-*Everything* at Google runs in a container.
+Google 的 *一切* 均在容器中运行。
 
-Google launches 2 billion containers per week.
+Google 每周发布 20 亿个容器。
 
-Part of a larger set of tools that make up the internal Google platform.
+构建 Google 内部平台的工具集中的一部分。
 ]]
 
 .image-credit[
@@ -237,20 +235,20 @@ image-credit: [flickr photo](https://flickr.com/photos/leroy-freakwinter/3108057
 
 .column-container[.left-column[
 # Kubernetes
-## Open Source
+## Open Source / 开源
 ]
 .right-column[
 https://github.com/kubernetes/kubernetes
 
-*Very* active open source project
+*非常非常* 活跃的开源项目
 
-23k stars, 1400+ contributors
+23k stars（赞）, 1400+ 贡献者
 
-Apache 2 licensed
+Apache License 2.0
 
-Written in Go
+用 Go 语言编写
 
-Hosted by the Cloud Native Computing Foundation (CNCF)
+由云原生基金会（CNCF）托管
 ]]
 
 .image-credit[
@@ -268,14 +266,14 @@ image-credit: [flickr photo](https://flickr.com/photos/leroy-freakwinter/3108057
 
 .column-container[.left-column[
 # Kubernetes
-## Benefits
+## Benefits / 收益
 ]
 .right-column[
-Extend the container goodness across nodes.
+跨界点调度部署容器。
 
-Enable operations specialization. Cluster Ops vs. App Ops
+允许专业化的操作。 集群运维 vs. 应用运维。
 
-Reduce cost to run many things in production.  Enables new ways of building applications.
+降低生产环境运行的成本。实现了构建应用程序的新方法。
 ]]
 
 .image-credit[
@@ -288,18 +286,18 @@ background-image: url(photos/space-needle.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/seattlemunicipalarchives/6175308389 "Space Needle under construction, 1961") shared by [Seattle Municipal Archives](https://flickr.com/people/seattlemunicipalarchives) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Design Principles
+# Design Principles / 设计原则
 ]
 .right-column[
-* declarative > imperative
-* control loops
-* simple > complex
-* modularity
-* legacy compatible
-* network-centric
-* labels > hierarchy
-* cattle > pets
-* open > closed
+* 声明 > 命令（declarative > imperative）
+* 控制器循环（control loops）
+* 简单 > 复杂（simple > complex）
+* 模块化（modularity）
+* 传统兼容（legacy compatible）
+* 网络中心（CNI，network-centric）
+* 标签 > 层次（labels > hierarchy）
+* 无状态 > 有状态（cattle > pets）
+* 开放 > 封闭（open > closed）
 ]]
 
 .image-credit[
@@ -311,8 +309,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## Cluster
+# Core Concepts / 核心概念
+## Cluster / 集群
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/cluster.svg">
@@ -328,8 +326,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## Pod
+# Core Concepts / 核心概念
+## Pod / 容器组
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/pod.svg">
@@ -345,8 +343,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## Labels
+# Core Concepts / 核心概念
+## Labels / 标签
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/labels.svg">
@@ -362,8 +360,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## ReplicaSet
+# Core Concepts / 核心概念
+## ReplicaSet / 副本集
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/rc.svg">
@@ -380,8 +378,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## ReplicaSet
+# Core Concepts / 核心概念
+## ReplicaSet / 副本集
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/rc2.svg">
@@ -398,8 +396,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## Service
+# Core Concepts / 核心概念
+## Service / 微服务
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/service.svg">
@@ -415,8 +413,8 @@ background-image: url(photos/core-memory.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/dvanzuijlekom/6952363784 "Magnetic-core Memory") shared by [dvanzuijlekom](https://flickr.com/people/dvanzuijlekom) under a [Creative Commons ( BY-SA ) license](https://creativecommons.org/licenses/by-sa/2.0/)
 
 .column-container[.left-column[
-# Core Concepts
-## Persistent Volumes
+# Core Concepts / 核心概念
+## Persistent Volumes / 持久化存储
 ]
 .right-column[.center[
 <object type="image/svg+xml" data="diagrams/pvs.svg">
@@ -433,21 +431,21 @@ background-image: url(photos/road.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We're on the Road to Nowhere") shared by [mdalmuld](https://flickr.com/people/mdalmuld) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# So much more!
+# So much more! / 还有更多！
 ]
 .right-column[
 * **Namespaces**
-  * Isolated workspaces for users/projects
+  * 用户或项目的独立的工作区域Isolated workspaces for users/projects
 * **Ingress**
-  * L7 load balancing
+  * L7 负载均衡*
 * **Deployments**
-  * Declarative version updates
+  * 声明式的版本升级/回退
 * **Jobs**
-  * Run to completion
+  * 工作至完成的任务
 * **Autoscaling**
-  * Automatically adjust replica count
+  * 自动调整副本数目
 * **DaemonSets**
-  * Run something on every node (or subset)
+  * 在所有（或某部分）节点运行工作负载
 ]]
 
 .image-credit[
@@ -460,22 +458,22 @@ background-image: url(photos/road.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We're on the Road to Nowhere") shared by [mdalmuld](https://flickr.com/people/mdalmuld) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# So much more!
+# So much more! / 还有更多！
 ]
 .right-column[
 * **Role Based Access Control (RBAC)**
-  * Control what users have access to what objects
+  * 控制用户访问对象的权限
 * **Multiple Schedulers**
 * **Flexible Scheduling Constraints**
-  * Affinity, anti-affinity, taints, tolerations
+  * 亲和性，反亲和性，污点，容忍
 * **StatefulSet**
-  * Support for long term stateful distributed systems
+  * 支持有状态的分布式应用*
 * **Automatic Cluster Scaling**
-  * K8s publishes signals that allow external services to scale the cluster automatically.
+  * 集群弹缩、HPA、VPA等等
 * **Cloud Provider Integration**
   * GCP, AWS, Azure, OpenStack, vSphere
 * **Network Policy**
-  * Network ingress policy
+  * 网络策略
 ]]
 
 .image-credit[
@@ -487,20 +485,20 @@ background-image: url(photos/road.jpg)
 image-credit: [flickr photo](https://flickr.com/photos/mdalmuld/9559878695 "We're on the Road to Nowhere") shared by [mdalmuld](https://flickr.com/people/mdalmuld) under a [Creative Commons ( BY ) license](https://creativecommons.org/licenses/by/2.0/)
 
 .column-container[.left-column[
-# Ecosystem
+# Ecosystem / 生态系统
 ]
 .right-column[
 * **Platforms**
   * OpenStack, Deis Workflow
 * **Operators**
-  * Automatic management of systems via API
-  * Integrates using k8s extensions
+  * 通过 API 自动管理系统/业务APP
+  * 通过 K8S 扩展机制实现
   * etcd, Prometheus, elasticsearch, memcahced, mongodb, rook, etc.
 * **Authentication Providers**
-  * Extended via webhook.  OpenID Connect, OAuth 2, LDAP, SAML, etc.
-  * Already implemented on GKE and GCE.
+  * 通过 webhook 扩展：OpenID Connect, OAuth 2, LDAP, SAML, etc.
+  * 已经在 GKE、GCE 上实现
 * **Helm: Package Manager**
-  * Super easy to install applications and systems.
+  * 超级容易安装和使用的包管理系统
 * **Extended Network Policy**
 ]]
 
